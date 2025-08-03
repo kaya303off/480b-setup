@@ -339,7 +339,7 @@ def download_with_resume(repo_id, local_dir, max_retries=5):
     return False
 
 # Download the model
-model_repo = "unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF"
+model_repo = "Qwen/Qwen2.5-Coder-32B-Instruct"
 model_dir = os.path.join(os.environ['INSTALL_DIR'], 'models', 'qwen3-coder-480b')
 
 success = download_with_resume(model_repo, model_dir)

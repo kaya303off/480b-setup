@@ -2,8 +2,6 @@
 
 Complete automated installation guide for Qwen3-Coder-480B-A35B-Instruct model on Ubuntu systems.
 
-> **📌 Important**: For the verified working installation process, see [INSTALLATION_GUIDE_480B.md](./INSTALLATION_GUIDE_480B.md). This guide provides the exact steps that successfully installed the 480B model with GGUF format.
-
 ## 🚀 Quick Start
 
 ```bash
@@ -111,8 +109,7 @@ On NVIDIA H100 80GB:
 
 - [Qwen Model Comparison Platform](https://github.com/twobitapps/hyperdev-1) - Visual comparison demo
 - [Original Qwen Repository](https://github.com/QwenLM/Qwen2.5-Coder)
-- [Hugging Face Model (Full)](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct)
-- [Hugging Face Model (GGUF)](https://huggingface.co/unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF)
+- [Hugging Face Model](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)
 
 ## 📝 License
 

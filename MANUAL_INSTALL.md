@@ -187,7 +187,7 @@ python3 << 'EOF'
 import os
 from huggingface_hub import snapshot_download
 
-model_repo = "Qwen/Qwen2.5-Coder-32B-Instruct"
+model_repo = "unsloth/Qwen3-Coder-480B-A35B-Instruct-GGUF"
 model_dir = os.path.join(os.environ['INSTALL_DIR'], 'models', 'qwen3-coder-480b')
 
 print(f"Downloading {model_repo}...")

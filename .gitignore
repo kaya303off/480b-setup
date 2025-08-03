@@ -27,6 +27,11 @@ env/
 ENV/
 qwen480b_env/
 
+# Node.js
+web/node_modules/
+web/.next/
+web/.vercel/
+
 # IDE
 .vscode/
 .idea/

@@ -1,0 +1,61 @@
+# Qwen3-Coder-480B-A35B-Instruct Python Dependencies
+# Tested and verified working versions
+
+# Core ML frameworks
+torch==2.3.0
+torchvision==0.18.0
+torchaudio==2.3.0
+
+# Transformers ecosystem
+transformers==4.54.1
+accelerate==0.33.0
+tokenizers==0.19.1
+sentencepiece==0.2.0
+protobuf==3.20.3
+
+# Hugging Face ecosystem
+huggingface-hub==0.24.6
+datasets==2.21.0
+evaluate==0.4.3
+
+# Model optimization
+peft==0.12.0
+bitsandbytes==0.43.3
+
+# Scientific computing
+numpy==1.24.4
+scipy==1.13.1
+scikit-learn==1.5.1
+
+# Data visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Development tools
+jupyter==1.0.0
+ipython==8.26.0
+notebook==7.2.1
+
+# Utilities
+tqdm==4.66.5
+psutil==6.0.0
+gpustat==1.1.1
+py3nvml==0.2.7
+nvidia-ml-py3==7.352.0
+
+# HTTP and networking
+requests==2.32.3
+urllib3==2.2.2
+
+# Configuration and serialization
+pyyaml==6.0.2
+toml==0.10.2
+
+# Optional optimization (may fail on some systems)
+# vllm==0.5.4
+
+# Development dependencies
+pytest==8.3.2
+black==24.8.0
+flake8==7.1.1
+mypy==1.11.1

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  qwen480b:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: qwen480b-setup
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - INSTALL_DIR=/opt/qwen480b_env
+      - HF_HOME=/opt/qwen480b_env/huggingface_cache
+    volumes:
+      - qwen480b_models:/opt/qwen480b_env/models
+      - qwen480b_cache:/opt/qwen480b_env/huggingface_cache
+      - ./examples:/app/examples
+      - ./scripts:/app/scripts
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  qwen480b_models:
+  qwen480b_cache:

